@@ -1,7 +1,9 @@
-from typing import Union
+from dataclasses import dataclass
 
-print("Oh God, this is my first ever repository. Please work")
 
-print("Here is a change of the repository! It was made on the device.")
-
-var_1 = Union[int,str]
+@dataclass
+class User:
+    user_id: int
+    name: str
+    age: int
+    email: str
